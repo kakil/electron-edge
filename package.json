@@ -1,0 +1,22 @@
+{
+  "name": "electron-first-steps",
+  "version": "1.0.0",
+  "description": "My source code from the book Developing an Electron Edge",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kakil/electron-edge.git"
+  },
+  "author": "Kitwana Akil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kakil/electron-edge/issues"
+  },
+  "homepage": "https://github.com/kakil/electron-edge#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^1.4.1"
+  }
+}
