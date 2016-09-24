@@ -14,15 +14,6 @@ const fs = require('fs')
 const shell = require('electron').shell;
 const showFileInFolderLink = document.querySelector('a.show-file-in-folder');
 
-//Platform code
-const platform = require('./platform');
-document.body.classList.add('platform-' + platform.name);
-
-//Mac OS X specific platform code
-if(platform.isMac && app.isDarkMode()) {
-  document.body.classList.add('platform-' + platform.name + '--dark')
-}
-
 //Mac OS X open file from drag and drop on icon
 const ipcRenderer = require('electron').ipcRenderer;
 var currentFile = remote.getGlobal('fileToOpen') || null;
