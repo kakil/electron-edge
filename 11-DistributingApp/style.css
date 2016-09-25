@@ -1,0 +1,141 @@
+body {
+  margin: 10;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
+.editor,
+.preview {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.editor {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.editor textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+
+.preview {
+  width: 50%;
+  height: 100%;
+  float:left;
+  padding-left: 2px;
+  margin-left: -2px;
+  background-color: #ddd;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  color: #000;
+}
+
+.window-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: #e3e3e3;
+  -webkit-app-region: drag;
+}
+
+.window-actions {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.platform-mac .window-actions {
+  float: left;
+}
+
+.window-action-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 0 8px;
+  order: 1;
+}
+
+.window-action-wrapper-restore {
+  display: none;
+}
+
+.window-action {
+  padding: 8px;
+  border-radius: 100%;
+  opacity: 0.8;
+  transition: 0.25s opacity, 0.5s box-shadow;
+  -webkit-app-region: no-drag;
+}
+
+.window-action: hover {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.window-action span {
+  display: none;
+}
+
+.window-action-minimize {
+  background: #fcd000;
+}
+
+.window-action-maximize,
+.window-action-restore {
+  background: #00fc65;
+}
+
+.window-action-close {
+  background: #fc0000;
+}
+
+.platform-mac .window-action-wrapper-close {
+  order: 0;
+}
+
+main {
+  margin-top: 46px;
+}
+
+.platform-mac .button {
+  border-radius: 5px;
+}
+
+.button {
+  border-radius: 3px;
+}
+
+.platform-windows-8 .button {
+  border-radius: 0;
+}
+
+.window-action-wrapper-restore,
+.window--is-maximized .window-action-wrapper-maximize {
+  display: none;
+}
+
+.window--is-maximized .window-action-wrapper-restore {
+  display: flex;
+}
