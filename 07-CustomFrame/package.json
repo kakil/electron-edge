@@ -1,0 +1,17 @@
+{
+  "name": "markdown-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Kitwana Akil",
+  "license": "ISC",
+  "dependencies": {
+    "dialog": "^0.1.8",
+    "electron-prebuilt": "^1.4.1",
+    "marked": "^0.3.6"
+  }
+}

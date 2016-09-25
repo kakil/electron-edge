@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Our Cool Editor</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="window-bar">
+      <ul class="window-actions">
+
+        <li class="window-action-wrapper">
+          <a href="#" class="window-action window-action-minimize" title="Minimize">
+            <span>Minimize</span>
+          </a>
+        </li>
+
+        <li class="window-action-wrapper window-action-wrapper-maximize">
+          <a href="#" class="window-action window-action-maximize" title="Maximize">
+            <span>Maximize</span>
+          </a>
+        </li>
+
+        <li class="window-action-wrapper window-action-wrapper-restore">
+          <a href="#" class="window-action window-action-restore" title="Restore">
+            <span>Restore</span>
+          </a>
+        </li>
+
+        <li class="window-action-wrapper window-action-wrapper-close">
+          <a href="#" class="window-action window-action-close" title="Close">
+            <span>Close</span>
+          </a>
+        </li>
+
+      </ul> <!-- end of ul class window-actions -->
+    </div> <!-- end of div class window-bar -->
+    <main>
+
+      <div class="header">
+        <div class="title">Awesome Editor</div>
+        <a href="#" class="open-file">Open file</a>
+        &nbsp;&middot;&nbsp;
+        <a href="#" class="save-file">Save file</a>
+        &nbsp;&middot;&nbsp;
+        <a href="#" class="show-file-in-folder">Show file in folder</a>
+      </div><!-- end of header -->
+
+      <div class="container hidden">
+
+        <div class="editor">
+          <textarea autofocus="true" placeholder="#Write something here..."></textarea>
+        </div> <!-- end editor -->
+
+        <div class="preview"></div>
+
+      </div><!-- end container -->
+
+    </main>
+
+    <script type="text/javascript" src="index.js">
+    </script>
+
+  </body>
+</html>
